@@ -372,25 +372,6 @@ ol {
 	display: none;
 }
 
-
-
-
-/* Remove hover effect on logo */
-.header__logo a:hover {
-  color: inherit;           /* Keeps the original color */
-  background-color: inherit; /* Keeps the original background */
-  text-decoration: none;     /* Removes any underline or decoration */
-  transform: none;           /* Removes any scale or rotation effects */
-}
-
-
-
-
-
-
-
-
-
 /* Mobile Menu Icon */
 .canvas__open {
   display: none;
@@ -404,14 +385,12 @@ ol {
   .header__menu ul.navbar-nav {
     display: none; /* Hide navbar items initially on mobile */
     flex-direction: column;
-    width: 100%;
-    background: #7a0f7a;
-    position: absolute;
-    top: 70px; /* Adjust based on your header height */
-    left: 0;
+ 
     z-index: 10;
   }
-
+nav{
+  visibility:hidden ;
+}
   .header__menu ul li {
     display: block;
     width: 100%;
@@ -1464,3 +1443,118 @@ padding: 10vh;
 .open-box {
     margin-right: 0 !important;
 }
+
+
+
+    
+    /* Popup overlay */
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 0.4s ease;
+      font-family: Arial, sans-serif;
+  }
+  
+  /* Popup content */
+  .popup-content {
+      width: 90%;
+      max-width: 600px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      color: #333;
+      animation: slideIn 0.5s ease;
+  }
+  
+  /* Headings and paragraph */
+  .popup-content h2 {
+      font-size: 1.8em;
+      color: #007bff;
+      margin-bottom: 10px;
+  }
+  
+  .popup-content p {
+      color: #555;
+      margin-bottom: 20px;
+  }
+  
+  /* Tabs */
+  .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+  }
+  
+  .tab-button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 4px 4px 0 0;
+      transition: background 0.3s;
+      margin: 0 5px;
+  }
+  
+  .tab-button.active, .tab-button:hover {
+      background: #0056b3;
+  }
+  
+  /* Day schedule */
+  .day-schedule {
+      text-align: left;
+      padding: 0 20px;
+  }
+  
+  .day-schedule h3 {
+      font-size: 1.5em;
+      color: #333;
+      margin-bottom: 10px;
+  }
+  
+  .day-schedule ul {
+      list-style-type: none;
+      padding: 0;
+  }
+  
+  .day-schedule li {
+      margin-bottom: 8px;
+      font-size: 1em;
+      color: #555;
+  }
+  
+  /* Close button */
+  .close-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #dc3545;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+  }
+  
+  .close-btn:hover {
+      background: #c82333;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+  }
