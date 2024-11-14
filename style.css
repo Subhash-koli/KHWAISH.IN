@@ -1094,13 +1094,10 @@ padding: 1%;
  
 }
 
-.pg-footer {
-  font-family: 'Roboto', sans-serif;
-}
 
 
 .footer {
-    background-color: #7a0f7a;
+    background-color: #811f81;
     color: #fff;
 }
 .footer-wave-svg {
@@ -1116,26 +1113,9 @@ padding: 1%;
 
 }
 
-.footer-content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 10px;
-    position: relative;
-}
 
-.footer-content-column {
-    box-sizing: border-box;
-    float: left;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 100%;
-    color: #fff;
-}
 
-.footer-content-column ul li a {
-  color: #fff;
-  text-decoration: none;
-}
+
 
 .footer-logo-link {
     display: inline-block;
