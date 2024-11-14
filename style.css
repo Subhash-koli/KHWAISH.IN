@@ -16,16 +16,16 @@ body {
   }
 
   .container_nav{
-    background: #7a0f7a;
+    background: #811f81;
     padding: 1px;
   }
 
 nav {
   font-family: "Nunito Sans", sans-serif;
-  background: #d501d58d;
+  background: #ff93ff37;
   border-radius: 10px;
   box-shadow: 0 25px 20px -28px rgba(0, 0, 0, 0.474);
-  margin: 5px 50px;
+  margin: 5px 10px;
   backdrop-filter: blur(10px);
 }
 nav ul li {
@@ -99,19 +99,17 @@ p {
     font-size: 15px;
     font-family: "Nunito Sans", sans-serif;
     color: #3d3d3d;
-    font-weight: 400;
-    line-height: 25px;
     margin: 0 0 15px 0;
 }
 
 
 
 i {
-    margin-right: 8px;
+    letter-spacing: 0.5em;
 }
 a{
   text-decoration: none;
-  margin: 0 25px 0 25px;}
+  margin: 0.0010%;}
 
 a:hover,
 a:focus {
@@ -122,8 +120,8 @@ a:focus {
 
 ul,
 ol {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 
@@ -145,24 +143,7 @@ ol {
     text-align: right;
 }
 
-.header__top__links {
-    display: inline-block;
-    margin-right: 0px;
-    padding: 0px 5px 0px 5px;
-}
 
-.header__top__links a {
-    color: #6b6161;
-    font-size: 16px;
-    letter-spacing: 1px;
-    margin-right: 28px;
-    display: inline-block;
-    
-}
-
-.header__top__links a:last-child {
-    margin-right: 0;
-}
 
 .header__top__hover {
     display: inline-block;
@@ -402,9 +383,7 @@ ol {
 
 /* 900px and below */
 @media (max-width: 900px) {
-  .navbar {
-      flex-direction: column;
-  }
+ 
   .services .service-box {
       flex-basis: 48%;
   }
@@ -1032,8 +1011,8 @@ body {max-width: auto;
 .hero {
   font-family: 'Lean Foreword', sans-serif;
   position: absolute;
-  top: 30vh;
-  left: 112vh;
+  top: 30%;
+  left: 50%;
   letter-spacing:0.1em;
   transform: translate(-50%, -50%);
   color: white;
@@ -1042,11 +1021,12 @@ body {max-width: auto;
   background-clip: text;
   color: transparent;
   animation: reveal 3s ease-in-out forwards infinite alternate;
-  width: 90%;
+
 
 }
+
 .rainbow {
-  font-size: 95px;
+  font-size: 230%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
    text-shadow:   0px -3px 0 #7a0f7a,  
@@ -1109,8 +1089,8 @@ section {
   background-color: rgba(255, 255, 255, 0.975);
 }
 .container_ev {
-margin: auto;
-padding: 10vh;
+margin: 5%;
+padding: 1%;
  
 }
 
