@@ -20,7 +20,7 @@ body {
   }
 
 nav {
-  font-family: "Nunito Sans", sans-serif;
+
   background: #ff93ff37;
   border-radius: 10px;
   box-shadow: 0 25px 20px -28px rgba(0, 0, 0, 0.474);
@@ -94,12 +94,6 @@ h6 {
     font-size: 16px;
 }
 
-p {
-    font-size: 15px;
-    font-family: "Nunito Sans", sans-serif;
-    color: #3d3d3d;
-    margin: 0 0 15px 0;
-}
 
 
 
@@ -112,7 +106,7 @@ a{
 
 a:hover,
 a:focus {
-    text-decoration: none;
+  
     outline: none;
     color: #ffffff;
 }
@@ -126,8 +120,7 @@ ol {
 
 .header__top {
     background: #e4e0df;
-    padding: 0.1vh 0;
-    margin: 0 2px;
+
     
 }
 
@@ -305,16 +298,6 @@ ol {
     transform: scale(0);
 }
 
-.header__nav__option {
-    text-align: right;
-    padding: 40px 2px;
-}
-
-.header__nav__option a {
-    display: inline-block;
-    margin-right: 26px;
-    position: relative;
-}
 
 
 /* Mobile Menu Icon */
@@ -649,7 +632,7 @@ ol {
   fill: #ddd162;
 }
 
-body {max-width: auto;
+body {max-width: 100%;
 
 }
 
@@ -1016,97 +999,15 @@ padding: 1%;
   margin-top: 0.5rem;
   color: rgb(153, 148, 120);
 }
+   
 
-@media (max-width: 500px){
-  html{
-      font-size: 50%;
-  }
-}    
-
-@media(min-width: 501px) and (max-width: 768px){
-  html{
-  font-size: 50%;
-  }
-}    
+   
 /* Header styles */
 .header {
   position: fixed;
   width: 100%;
   z-index: 1;
 }
-
-
-
-.header ul {
-  overflow: hidden;
-}
-
-
-#sticky-side
-{
-  position:fixed;
-  top:50%;
-  transform:translateY(-50%);
-  right:0;
-  display: flex;
-  align-items: center;
-  
-
-}
-
-.contact-btn{
-  height:50px;
-  width:150px;
-  background-color:#3F51B5;
-  color:#fff;
-  line-height:50px;
-  text-align:center;
-  font-size:16px;
-  font-weight:bold;
-  text-transform:uppercase;
-  transform:translatex(50px) rotate(-90deg);
-  cursor:pointer;
-}
-#side-box
-{
-    padding: 10px;
-    border: 1px solid #e1e1e1;
-    border-right: 0;
-    height: auto;
-    max-height: calc(100vh - 20px);
-    overflow-y: auto;
-    background: #fff;
-    max-width: 400px;
-    margin-right: -400px;
-    z-index: 9999;
-    transition: all .5s;
-      box-sizing: border-box;
-}
-#side-box .side-header
-{
-  display:block;
-  background-color:#3F51B5;
-  padding:0 15px;
-  font-size:20px;
-  color:#fff;height:40px;
-  line-height:40px;
-  position:relative;
-}
-#side-box .side-header i{
-  font-size:20px;
-  position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-  cursor:pointer;
-  
-}
-.open-box {
-    margin-right: 0 !important;
-}
-
-
-
     
     /* Popup overlay */
     .popup-overlay {
