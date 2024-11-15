@@ -1,0 +1,60 @@
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 360px) {
+    .rainbow {
+        font-size: 20%;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .rainbow {
+        font-size: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .rainbow {
+        font-size: 150%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .rainbow {
+        font-size: 180%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .rainbow {
+        font-size: 200%;
+    }
+    .canvas__open {
+        visibility: visible;
+        color: #fff;
+        cursor: pointer;
+        z-index: 1;
+      }
+      
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1108px) {
+    .rainbow {
+        font-size: 210%;
+    }
+
+}
+
+
+/* Extra Large Devices (Large Desktops, ≥ 1200px) */
+@media only screen and (min-width: 1200px) {
+    .rainbow {
+        font-size: 230%;
+    }
+    
+  }
