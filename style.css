@@ -348,89 +348,14 @@ ol {
     display: none;
 }
 
-.canvas__open {
-    display: none;
-}
 
 /* Mobile Menu Icon */
 .canvas__open {
-  display: none;
-  font-size: 24px;
+  visibility: hidden;
+  font-size: 20%;
   color: #fff;
   cursor: pointer;
 }
-
-/* Responsive adjustments */
-
-/* 1200px and below */
-@media (max-width: 1200px) {
-  .container {
-      max-width: 1100px;
-      padding: 0 20px;
-  }
-  .navbar {
-      flex-direction: column;
-      align-items: center;
-  }
-  .responsive-svg {
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    display: block;
-  }
-}
-
-/* 900px and below */
-@media (max-width: 900px) {
- 
-  .services .service-box {
-      flex-basis: 48%;
-  }
-  .responsive-svg {
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    display: block;
-  }
-}
-
-/* 780px and below */
-@media (max-width: 780px) {
-  header {
-      padding: 20px;
-      text-align: center;
-  }
-  .services .service-box {
-      flex-basis: 100%;
-  }
-  .responsive-svg {
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    display: block;
-  }
-}
-
-/* 600px and below */
-@media (max-width: 600px) {
-  .navbar ul {
-      display: none; /* Hide navbar items if you have a mobile menu icon */
-  }
-  .home, .about, .services, .contact {
-      padding: 20px;
-  }
-  .contact-form input,
-  .contact-form textarea {
-      width: 100%;
-  }
-  .responsive-svg {
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    display: block;
-  }
-}
-
 
 
 
