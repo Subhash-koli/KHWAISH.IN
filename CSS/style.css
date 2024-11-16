@@ -6,59 +6,13 @@
 }
 
 body {
-    height: 1%;
+    height: 100vh;
     -webkit-font-smoothing: antialiased;
     background-color: #ffffffba;
-    scroll-behavior: smooth;	
-
+    scroll-behavior: smooth;
   
   }
-
-  .container_nav{
-    background: #811f81;
-    padding: 1px;
-  }
-
-nav {
-
-  background: #ff93ff37;
-  border-radius: 10px;
-  box-shadow: 0 25px 20px -28px rgba(0, 0, 0, 0.474);
-  margin: 5px 10px;
-  backdrop-filter: blur(10px);
-}
-nav ul li {
- 
-  display: inline-block;
-  margin: 0 0 0 5px;
-  color: #a88cb0b3;
-  cursor: pointer;
-  position: absolute;
-  z-index: 2;
-  transition: color 0.5s;
-}
-nav ul li::after {
-  content: "";
-  background: #db7dd391;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-  opacity: 0;
-  transition: top 0.5s, opacity 0.5s;
-}
-nav ul li:hover {
-  color: #fff;
-}
-nav ul li:hover::after {
-  top: 50%;
-  opacity: 1;
-}
-
+  
 h1,
 h2,
 h3,
@@ -102,21 +56,69 @@ i {
 }
 a{
   text-decoration: none;
-  margin: 0.0010%;}
+  margin: 0.0040%;
+}
 
 a:hover,
 a:focus {
-  
     outline: none;
     color: #ffffff;
 }
 
-ul,
-ol {
-	padding: 0;
-	margin: 0;
-}
 
+
+
+
+  .container_nav{
+    background: #811f81;
+    padding: 1px;
+    justify-content: space-between;    
+    gap: 50px;
+  }
+
+nav {
+
+  background: #ff93ff37;
+  border-radius: 20px;
+  box-shadow: 0 25px 20px -28px rgba(0, 0, 0, 0.474);
+  margin: 0.30% 10px;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+nav ul li {
+ 
+  display: inline-block;
+  color: #a88cb0b3;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  transition: color 0.5s;
+
+}
+nav ul li::after {
+  content: "";
+  background: #db7dd391;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+  transition: top 0.5s, opacity 0.5s;
+}
+nav ul li:hover {
+  color: #fff;
+}
+nav ul li:hover::after {
+  top: 50%;
+  opacity: 1;
+}
+.navbar-nav{
+  visibility: visible;
+}
 
 .header__top {
     background: #e4e0df;
@@ -191,6 +193,84 @@ ol {
 }
 
 
+
+.countdown-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.time-box {
+    flex: 1;
+    margin: 0 10px;
+    background: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.time-box:hover {
+    transform: scale(1.05);
+}
+
+.time-box span {
+    display: block;
+    font-size: 48px;
+    font-weight: bold;
+    color: #00796b;
+}
+
+.label {
+    font-size: 18px;
+    color: #555;
+}
+
+h1 {
+    margin: 0;
+    transition: transform 0.5s;
+}
+
+.shake {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(-5px);
+    }
+    50% {
+        transform: translate(5px);
+    }
+    75% {
+        transform: translate(-5px);
+    }
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
   
 
@@ -306,9 +386,9 @@ ol {
   font-size: 5vh;
   color: #fff;
   cursor: pointer;
-  text-align: right;
   
 }
+
 
 
 

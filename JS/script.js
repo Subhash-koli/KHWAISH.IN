@@ -18,7 +18,9 @@ if( $(this).scrollTop() > hdrHeight + 50) {
 });
 
 
-
+  function toggleMenu() {
+            document.querySelector('.navbar-links').classList.toggle('show');
+        }
 
 function filterEvents(category) {
 // Find the radio button with the ID matching the category
